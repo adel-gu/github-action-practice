@@ -24,6 +24,7 @@ jobs:
 
   run-windows-commands:
     runs-on: windows-latest
+    needs: ['run-python-commands']
     steps:
       - name: current directory using PowerShel
         run: Get-Location
