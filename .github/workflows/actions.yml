@@ -13,4 +13,4 @@ jobs:
           who-to-greet: Adel
 
       - name: Output greeting time
-        run: echo greeted at ${{ steps.greet.outputs.time }}
+        run: echo greeted at "${{ steps.greet.outputs.time }}"
